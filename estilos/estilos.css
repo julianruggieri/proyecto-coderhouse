@@ -1,0 +1,957 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Croissant+One&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Croissant+One&family=Montserrat:wght@500&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+
+/*cosas del inicio*/
+.cuerpo-inicio{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: rgb(59, 40, 57);
+    margin-left: 3rem;
+
+    grid-template-areas: 
+    "encabezado encabezado encabezado encabezado"
+    "frase frase frase frase"
+    "contenido contenido contenido contenido"
+    "contenido contenido contenido contenido"
+    "footer footer footer footer";
+}
+
+.encabezado{
+    grid-area: encabezado;
+    background-color: black;
+    
+}
+/*
+nav{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+    color: rgba(#81747f);
+    text-align: justify;
+    border-style: double;
+    border-color: blueviolet;
+    font-size: medium;
+    font-weight: 700;
+    position: sticky;
+    
+
+}
+
+*/
+
+
+.nav-item a{
+    color: #8a067d;
+    font-size: larger;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 1000;
+
+
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+    color: #8a067d;
+}
+
+.frase{
+     background-color: rgb(242, 175, 248);
+        margin-top:  10px;
+        margin-bottom: 10px;
+        font-size: small;
+        font-family: 'Comfortaa', cursive;
+        box-shadow: 16px 14px 20px #0000008c;
+        grid-area: frase;
+        padding: .5rem;
+        
+    
+    
+    
+}
+
+
+.noticias{
+    float: left;
+    height: fit-content;
+    width: 55%;
+    margin: 20px;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    border-color: blueviolet;
+    border-style: inset;
+    
+}
+
+.noticia-victoria{
+    padding: 5px;
+    border-style: outset;
+    border-color: antiquewhite;
+    border-width: 3px;
+}
+
+#titulo-noticias{
+    padding-left: 10px;
+    font-family: 'Comfortaa', cursive;
+    color: aliceblue;
+}
+
+
+#descripcion-noticia{
+    
+    padding: 10px;
+    padding-bottom: 7px;
+    color: aliceblue;
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contenedor-imagen-texto{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.imagen-formacion{
+    display: flex;
+    align-items: center;
+}
+
+.texto-encima{
+    
+    font-size: xx-large;
+    background-color: rgba(0, 0, 0, 0.652);
+    color: aliceblue;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.noticia-fixture{
+    padding: 5px;
+    border-style: outset;
+    border-color: antiquewhite;
+    border-width: 3px;
+
+}
+
+.goleadores{
+    display: flex;
+    margin-top: 3vh;
+    flex-direction: column;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.487);
+    border-color: blueviolet;
+    border-style: inset;
+    
+    
+
+}
+
+
+
+#lista{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    border-style: outset;
+    border-color: antiquewhite;
+    border-width: 3px;
+    list-style: none;
+    font-size: medium;
+    color: aliceblue;
+    margin: 2px;
+    
+
+}
+
+.borde-derecho{
+    margin: 7px;
+    flex-direction: column;
+    background-color: black;
+    display: flex;
+    
+    height: fit-content;
+    border-color: blueviolet;
+    border-style: inset;
+    
+    
+    
+    
+    
+    
+    
+
+
+}
+
+.borde-derecho p{
+    color: aliceblue;
+    font-size:x-large;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Croissant One', cursive;
+   
+}
+
+
+#icono-hashtag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.iconos{
+    font-size: xx-large;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    
+    
+
+}
+.iconos a{
+    color: #6e1164;
+}
+
+#cancion-cancha{
+    color: aliceblue;
+    font-size: large;
+    padding: 15px;
+    
+}
+
+.mapa-frase{
+    padding: 5px;
+    border-style: double;
+    border-color: blueviolet;
+}
+
+
+
+
+
+
+.contenido{
+    grid-area: contenido;
+    background-color: #6e1164;
+    border-style: double;
+    display: flex;
+    border-color: rgba(255, 255, 255, 0.603);
+}
+
+.footer{
+
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(242, 175, 248);
+    border-style: double;
+    
+}
+
+.footer p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.footer h2{
+    font-family: 'Yellowtail', cursive;
+}
+
+
+/* Multimedia*/
+
+
+.cuerpo-multimedia{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: rgb(205, 202, 205);
+    margin-left: 3rem;
+    grid-template-areas: 
+    "encabezado encabezado encabezado encabezado"
+    "frase-multimedia frase-multimedia frase-multimedia frase-multimedia"
+    "contenido-multimedia contenido-multimedia contenido-multimedia contenido-multimedia"
+    "contenido-multimedia contenido-multimedia contenido-multimedia contenido-multimedia"
+    "footer footer footer footer";
+}
+
+
+.contenido-multimedia{
+    
+    grid-area: contenido-multimedia;
+    background-color: #6e1164;
+    border-style: double;
+    display: flex;
+    justify-content: center;
+}
+
+.frase-multimedia{
+    grid-area: frase-multimedia;
+    background-color: rgb(242, 175, 248);
+        margin-top:  10px;
+        margin-bottom: 10px;
+        font-size: xx-large;
+        font-family: 'Comfortaa', cursive;
+        box-shadow: 16px 14px 20px #0000008c;
+        padding: .5rem;
+
+}
+
+.info-del-torneo{
+    height: fit-content;
+    background-color: rgba(109, 61, 116, 0.712);
+    border-color: black;
+    border-style: inset;
+    
+    
+}
+
+#cabecera-de-seccion{
+    text-decoration: underline;
+    font-size: x-larger;
+    font-weight: 700;
+    color:rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 1rem;
+
+
+}
+
+.info-del-torneo p{
+    text-decoration: none;
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+.imagenes-lugar-torneo{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1vh;
+    border-color: whitesmoke;
+    border-style: inset;
+    padding-top: 1vh;
+    flex-direction: column;
+    box-shadow: #0000008c;
+    
+    
+}
+
+.lugar-del-torneo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes-lugar-torneo p{
+    font-size: large;
+    font-weight: 700; 
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(237, 209, 245);
+    
+    
+   
+}
+
+
+.muestra-de-partidos{
+    margin: 1vh;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(109, 61, 116, 0.712);
+    background-size: cover;
+    border-color: black;
+    border-style: inset;
+    box-shadow: 16px 14px 20px #0000008c;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#textos-arriba-de-links{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    color: whitesmoke;
+    font-size: larger;
+
+}
+
+
+.muestra-de-partidos div{
+    border-color: whitesmoke;
+    border-style: inset;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.muestra-de-fotos{
+    
+   
+    height: fit-content;
+    margin: 3rem;
+    background-color: rgba(112, 20, 126, 0.911);
+    border-color: black;
+    border-style: inset;
+    box-shadow: 16px 14px 20px #0000008c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+
+}
+.muestra-de-fotos p{
+    color: white;
+    
+
+}
+
+.slide{
+    margin: 1rem;
+    width: 80vh;
+
+}
+
+
+/* tienda */
+
+.cuerpo-tienda{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: rgb(59, 40, 57);
+    margin-left: 3rem;
+    min-height: 100%;
+
+    grid-template-areas: 
+    "encabezado encabezado encabezado encabezado"
+    "frase frase frase frase"
+    "contenido-tienda contenido-tienda contenido-tienda contenido-tienda"
+    "contenido-tienda contenido-tienda contenido-tienda contenido-tienda"
+    "footer footer footer footer";
+}
+
+.contenido-tienda{
+    
+    
+    grid-area: contenido-tienda;
+    background-color: #6e1164;
+    border-style: double;
+    
+    
+}
+.productos{
+    margin: 20px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.73);
+    flex-direction: row;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.titulo-productos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.musculosa{
+    margin: 25px ;
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    background-color: blueviolet;
+
+}
+
+.musculosa h2{
+    padding: 7px;
+}
+.musculosa p{
+    color: aliceblue;
+    font-size: larger;
+}
+
+#camisetas{
+    max-width: 100%;
+    max-height: 450px;
+    padding: 6px;
+}
+
+
+.cinta-capi{
+    margin: 25px ;
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    background-color: blueviolet;
+
+}
+
+.cinta-capi h2{
+    padding: 7px;
+}
+
+.cinta-capi p{
+    color: aliceblue;
+    font-size: larger;
+}
+
+
+.trapo{
+    margin: 25px ;
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    background-color: blueviolet;
+}
+
+.trapo h2{
+    padding: 7px;
+}
+.trapo p{
+    color: aliceblue;
+    font-size: larger;
+}
+
+
+.metodos-pago{    
+    margin: 20px;
+    
+    display: flex;
+    background-color: rgba(180, 66, 198, 0.73);
+    flex-direction: column;
+    border-radius: 10px;
+    align-items:center ;
+    justify-content: center;
+    
+}
+
+.titulo-metodos-pago{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.iconos-pagos{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#iconos-pago{
+    font-size: xx-large;
+    padding: 15px;
+}
+
+
+
+
+/*el club*/
+
+.cuerpo-historia{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: rgb(59, 40, 57);
+    margin-left: 3rem;
+    min-height: 100%;
+
+    grid-template-areas: 
+    "encabezado encabezado encabezado encabezado"
+    "frase frase frase frase"
+    "contenido-historia contenido-historia contenido-historia contenido-historia"
+    "contenido-historia contenido-historia contenido-historia contenido-historia"
+    "footer footer footer footer";
+}
+
+.contenido-historia{
+    grid-area: contenido-historia;
+    background-color: #6e1164;
+    border-style: double;
+}
+.contenedor-tarjetas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.card{
+    display: flex;
+    height: fit-content;
+    background-color: #55a8e4;
+    border-radius: 2vh;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    
+}
+.card p{
+    font-family: 'Comfortaa', cursive;
+}
+
+
+
+
+.historia{
+    
+    display: flex;
+    flex-direction: column; 
+    max-width: 70vh;
+    background-color: rgba(104, 47, 113, 0.712);
+    border-radius: 7px;
+    margin-left: 1rem;
+    border-style: groove;
+    border-color: black;
+}
+
+
+.titulo-historia{
+    display: flex;
+    color: aliceblue;
+    font-family: 'Comfortaa', cursive;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    border-style: groove;
+    border-width: 7px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 7px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    
+    
+}
+
+
+
+
+.descripcion-historia{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.571);
+    
+}
+
+.descripcion-historia p{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+
+
+.jugadores{
+    margin: 7vh;
+    
+    
+    display: flex;
+    flex-direction: column; 
+    max-width: fit-content;
+    background-color: rgba(104, 47, 113, 0.712);
+    border-radius: 7px;
+    border-style: groove;
+    border-color: black;
+    
+
+}
+.jugadores p{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+
+
+}
+
+.titulo-jugadores{
+    display: flex;
+    color: aliceblue;
+    font-family: 'Comfortaa', cursive;
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+    border-style: groove;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 7px;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
+.jugadores-historicos{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.571);
+
+}
+
+.listas-jugadores{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.571);
+    align-items: center;
+    justify-content: center;
+}
+
+#lista-jugadores{
+    margin: 10px;
+    list-style: none;
+    
+}
+
+.agradecimiento{
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Croissant One', cursive;
+
+}
+
+
+.contenedor-planteles{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border-style: inset;
+    border-radius: 2vh;
+    background-color: rgba(0, 0, 0, 0.406);
+    
+    
+
+}
+
+.contenedor-planteles h2{
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Croissant One', cursive;
+    color: aqua;
+    padding: 1rem;
+
+}
+
+
+
+
+
+#plantel{
+    max-width: 700px;
+    max-height: 300px;
+    
+}
+
+/* socios */
+
+.cuerpo-socio{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: rgb(59, 40, 57);
+    margin-left: 3rem;
+    min-height: 100%;
+
+    grid-template-areas: 
+    "encabezado encabezado encabezado encabezado"
+    "frase frase frase frase"
+    "contenido-socios contenido-socios contenido-socios contenido-socios"
+    "contenido-socios contenido-socios contenido-socios contenido-socios"
+    "footer footer footer footer";
+}
+
+.contenido-socios{
+    grid-area: contenido-socios;
+    background-color: #d2c8d1;
+    border-style: double;
+}
+
+.inputs{
+    background-color: rgba(2, 2, 2, 0.249);
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.formulario{
+    margin: 3rem;
+    border-style: inherit;
+    border-width: 5px;
+    background-color: #e9b0f9;
+}
+
+.formulario label{
+    font-size: xx-large;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(7, 7, 7);
+    font-weight: 900;
+
+}
+
+.formulario input{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.generos{
+    background-color: #8a067d40;
+    border-style: groove;
+    border-color: rgb(127, 92, 140);
+    padding: 2rem;
+    
+}
+.generos h2{
+    text-decoration: underline;
+    font-size: x-large;
+    
+
+}
+
+
+.generos label{
+    font-size: larger;
+
+}
+
+
+.enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+}
+
+
+
+/*media*/
+
+
+
+
+
+
+
+@media(max-width:700px){
+    .cuerpo-tienda{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .cuerpo-tienda section{
+        
+        flex-grow: 1;
+    } 
+    .productos{
+        flex-direction: column;
+    }
+
+    .footer h2{
+        font-size: medium;
+    }
+    .footer p{
+        font-size: small;
+
+    }
+
+    .cuerpo-historia{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contenedor-tarjetas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        flex-direction: column;
+        
+
+
+    }
+    .jugadores{
+        width: 100vh;
+        
+        
+    }
+    .contenedor-planteles{
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
