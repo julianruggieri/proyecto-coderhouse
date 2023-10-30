@@ -1,0 +1,275 @@
+
+
+.cuerpo-inicio{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: $fondoDeBody;
+    margin-left: 3rem;
+
+    grid-template-areas: 
+    "encabezado encabezado encabezado encabezado"
+    "frase frase frase frase"
+    "contenido contenido contenido contenido"
+    "contenido contenido contenido contenido"
+    "footer footer footer footer";
+    
+    
+.encabezado{
+    grid-area: encabezado;
+    background-color: black;
+    
+    
+    
+    
+    
+}
+    .frase{
+     background-color: rgb(242, 175, 248);
+        margin-top:  10px;
+        margin-bottom: 10px;
+        font-size: small;
+        font-family: 'Comfortaa', cursive;
+        box-shadow: 16px 14px 20px #0000008c;
+        grid-area: frase;
+        padding: .5rem;
+        
+    }
+
+    .contenido{
+    grid-area: contenido;
+    background-color: #6e1164;
+    border-style: double;
+    display: flex;
+    border-color: rgba(255, 255, 255, 0.603);
+
+    .noticias{
+        float: left;
+        height: fit-content;
+        width: 55%;
+        margin: 20px;
+        background-color: rgb(0, 0, 0);
+        background-size: cover;
+        border-color: blueviolet;
+        border-style: inset;
+    
+    
+    
+        .noticia-victoria{
+        padding: 5px;
+        border-style: outset;
+        border-color: antiquewhite;
+        border-width: 3px;
+        
+        
+        #titulo-noticias{
+        padding-left: 10px;
+        font-family: 'Comfortaa', cursive;
+        color: aliceblue;
+    }
+        #descripcion-noticia{
+        
+        padding: 10px;
+        padding-bottom: 7px;
+        color: aliceblue;
+        font-size: larger;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    }   
+        .contenedor-imagen-texto{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        .imagen-formacion{
+        display: flex;
+        align-items: center;
+    }
+    }
+    
+       
+    
+    .texto-encima{
+        
+        font-size: xx-large;
+        background-color: rgba(0, 0, 0, 0.652);
+        color: aliceblue;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    } /*corchete de noticia victoria */
+    
+    
+    .noticia-fixture{
+        padding: 5px;
+        border-style: outset;
+        border-color: antiquewhite;
+        border-width: 3px;
+    
+        .contenedor-imagen-texto{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            .imagen-formacion{
+            display: flex;
+            align-items: center;
+        }
+        }
+    
+        #titulo-noticias{
+            padding-left: 10px;
+            font-family: 'Comfortaa', cursive;
+            color: aliceblue;
+        }
+    
+        #descripcion-noticia{
+        
+            padding: 10px;
+            padding-bottom: 7px;
+            color: aliceblue;
+            font-size: larger;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+    
+        .texto-encima{
+        
+            font-size: xx-large;
+            background-color: rgba(0, 0, 0, 0.652);
+            color: aliceblue;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+    
+       
+    
+    
+    
+    
+    } /*noticia fixture*/
+    
+       
+    } /*corchete de noticias */
+    
+    
+    
+    
+    .goleadores{
+        display: flex;
+        margin-top: 3vh;
+        flex-direction: column;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.487);
+        border-color: blueviolet;
+        border-style: inset;
+        
+        #lista{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 5px;
+        border-style: outset;
+        border-color: antiquewhite;
+        border-width: 3px;
+        list-style: none;
+        font-size: medium;
+        color: aliceblue;
+        margin: 2px;
+        
+    
+    }
+    
+    #descripcion-noticia{
+        
+        padding: 10px;
+        padding-bottom: 7px;
+        color: aliceblue;
+        font-size: larger;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    }
+        
+    
+    }
+    
+    .borde-derecho{
+        margin: 7px;
+        flex-direction: column;
+        background-color: black;
+        display: flex;
+        height: fit-content;
+        border-color: blueviolet;
+        border-style: inset; 
+    
+        p{
+        color: aliceblue;
+        font-size:x-large;
+        font-family: 'Comfortaa', cursive;
+        font-family: 'Croissant One', cursive;
+       
+    }
+        
+        #icono-hashtag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .iconos{
+        font-size: xx-large;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        
+        a{
+        color: #6e1164;
+    
+    }   .mapa-frase{
+        padding: 5px;
+        border-style: double;
+        border-color: blueviolet;
+    }
+        
+    }
+    
+        #cancion-cancha{
+        color: aliceblue;
+        font-size: large;
+        padding: 15px;
+        
+    }
+    
+    #descripcion-noticia{
+        
+        padding: 10px;
+        padding-bottom: 7px;
+        color: aliceblue;
+        font-size: larger;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    }
+        
+        
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+} /*corchete del body */

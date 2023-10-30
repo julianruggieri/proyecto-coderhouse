@@ -1,0 +1,19 @@
+
+
+.footer{
+
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(242, 175, 248);
+    border-style: double;
+
+    p{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    h2{
+        font-family: 'Yellowtail', cursive;
+    }
+    
+}
