@@ -1,0 +1,229 @@
+.cuerpo-tienda{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr ;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: rgb(59, 40, 57);
+    margin-left: 3rem;
+    min-height: 100%;
+
+    grid-template-areas: 
+    "encabezado encabezado encabezado encabezado"
+    "frase frase frase frase"
+    "contenido-tienda contenido-tienda contenido-tienda contenido-tienda"
+    "contenido-tienda contenido-tienda contenido-tienda contenido-tienda"
+    "footer footer footer footer";
+    #textos-arriba-de-links {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        text-decoration: underline;
+        color: rgb(240, 174, 174);
+        font-size: larger;
+    }
+
+    .encabezado{
+        grid-area: encabezado;
+        background-color: black;
+        
+        
+        
+        
+        
+    }
+    .frase{
+         background-color: rgb(242, 175, 248);
+            margin-top:  10px;
+            margin-bottom: 10px;
+            font-size: small;
+            font-family: 'Comfortaa', cursive;
+            box-shadow: 16px 14px 20px #0000008c;
+            grid-area: frase;
+            padding: .5rem;
+            
+    }
+    .contenido-tienda{
+    grid-area: contenido-tienda;
+    background-color: #6e1164;
+    border-style: double;
+
+            .productos{
+                margin: 20px;
+                display: flex;
+                background-color: rgba(0, 0, 0, 0.73);
+                flex-direction: row;
+                border-radius: 15px;
+                justify-content: center;
+                align-items: center;
+
+                .musculosa{
+                    margin: 25px ;
+                    border-style: double;
+                    border-color: black;
+                    border-width: 5px;
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: fit-content;
+                    background-color: blueviolet;
+                    transition: 1s;
+
+                    h2{
+                        padding: 7px;
+                    }
+                    p{
+                        color: aliceblue;
+                        font-size: larger;
+                    }
+
+                &:hover{
+                    transform:$agrandarTarjeta ;
+
+                }
+                
+                }
+                #camisetas{
+                    max-width: 100%;
+                    max-height: 450px;
+                    padding: 6px;
+                }
+
+                .cinta-capi{
+                    margin: 25px ;
+                    border-style: double;
+                    border-color: black;
+                    border-width: 5px;
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: fit-content;
+                    background-color: blueviolet;
+                    transition: 1s;
+
+                    h2{
+                        padding: 7px;
+                    }
+                    p{
+                        color: aliceblue;
+                        font-size: larger;
+                    }
+                    &:hover{
+                        transform:$agrandarTarjeta ;
+    
+                    }
+                
+                }
+
+                .trapo{
+                    margin: 25px ;
+                    border-style: double;
+                    border-color: black;
+                    border-width: 5px;
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: fit-content;
+                    background-color: blueviolet;
+                    transition: 1s;
+                    h2{
+                        padding: 7px;
+                    }
+                    p{
+                        color: aliceblue;
+                        font-size: larger;
+                    }
+                    &:hover{
+                        transform:$agrandarTarjeta ;
+    
+                    }
+                }
+
+                
+                
+            
+            }
+            .metodos-pago{    
+                margin: 20px;
+                
+                display: flex;
+                background-color: rgba(180, 66, 198, 0.73);
+                flex-direction: column;
+                border-radius: 10px;
+                align-items:center ;
+                justify-content: center;
+                .titulo-metodos-pago{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                
+                }
+                .iconos-pagos{
+                    margin: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    #iconos-pago{
+                        font-size: xx-large;
+                        padding: 15px;
+                    }
+                }
+                
+            }
+            
+            
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
