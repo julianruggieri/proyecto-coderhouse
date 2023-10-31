@@ -847,7 +847,73 @@ nav .nav-item a:hover {
   .cuerpo-historia .contenido-historia .contenedor-planteles .card {
     width: 100vh;
   }
-}
-/*cosas del inicio*/
-/*el club*/
-/* socios *//*# sourceMappingURL=estilos.css.map */
+  .cuerpo-inicio {
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cuerpo-inicio .contenido {
+    display: flex;
+    flex-direction: column;
+  }
+  .cuerpo-inicio .contenido .noticias {
+    width: -moz-fit-content;
+    width: fit-content;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .cuerpo-inicio .contenido .noticias img {
+    width: 250px;
+    height: 150px;
+  }
+  .cuerpo-inicio .contenido .noticias .contenedor-imagen-texto .texto-encima {
+    font-size: small;
+  }
+  .cuerpo-inicio .contenido .borde-derecho .mapa-frase iframe {
+    width: 300px;
+    height: 150px;
+  }
+  .cuerpo-inicio .footer h2 {
+    font-size: medium;
+  }
+  .cuerpo-inicio .footer p {
+    font-size: small;
+  }
+  .cuerpo-multimedia {
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cuerpo-multimedia .contenido-multimedia {
+    display: flex;
+    flex-direction: column;
+  }
+  .cuerpo-multimedia .contenido-multimedia .muestra-de-partidos {
+    margin: 0;
+  }
+  .cuerpo-multimedia .contenido-multimedia .muestra-de-partidos .videos-torneo #textos-arriba-de-links {
+    font-size: medium;
+  }
+  .cuerpo-multimedia .contenido-multimedia .muestra-de-partidos .videos-torneo iframe {
+    width: 290px;
+    height: 200;
+  }
+  .cuerpo-multimedia .contenido-multimedia .muestra-de-fotos {
+    margin-left: 15px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .cuerpo-multimedia .contenido-multimedia .muestra-de-fotos .carousel {
+    width: 290px;
+    height: 200;
+  }
+  .cuerpo-multimedia .footer h2 {
+    font-size: medium;
+  }
+  .cuerpo-multimedia .footer p {
+    font-size: small;
+  }
+}/*# sourceMappingURL=estilos.css.map */

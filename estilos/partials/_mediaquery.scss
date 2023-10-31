@@ -10,14 +10,19 @@
     flex-grow: 1;
 } 
 
-
-.footer h2{
+.footer{
+  h2{
     font-size: medium;
 }
-.footer p{
-    font-size: small;
+  p{
+  font-size: small;
 
 }
+
+}
+
+
+
   .productos{
     flex-direction: column;
 }
@@ -25,19 +30,6 @@
   }
 
 }
-
-
-
-
- 
-
-
-
-
-  
-
-  
-
 
   .cuerpo-historia {
     margin-left: 0;
@@ -72,6 +64,112 @@
 
   }
 
+  .cuerpo-inicio{
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .contenido{
+      display: flex;
+      flex-direction: column;
+      
+
+      .noticias{
+      width: fit-content;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+
+      img{
+        width: 250px; 
+        height: 150px;
+      }
+      .contenedor-imagen-texto{
+        .texto-encima{
+        font-size: small;
+
+      }
+      }
+      
+      
+      
+  } 
+  .borde-derecho{
+    .mapa-frase{
+      iframe{
+        width: 300px;
+        height: 150px;
+      }
+    }
+  }
+
+
+  }
+  .footer{
+    h2{
+      font-size: medium;
+  }
+    p{
+    font-size: small;
+  
+  }}
+
 
 
 }
+.cuerpo-multimedia{
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+  .contenido-multimedia{
+    display: flex;
+      flex-direction: column;
+
+      .muestra-de-partidos{
+        margin: 0;
+
+        .videos-torneo{
+          #textos-arriba-de-links{
+            font-size: medium;
+          }
+          iframe{
+            width: 290px;
+            height: 200;
+          }
+        }
+      }
+
+      .muestra-de-fotos{
+        margin-left: 15px;
+        width: fit-content;
+        .carousel{
+          
+            width: 290px;
+            height: 200;
+          
+        }
+      }
+
+
+  
+  
+  
+    }
+
+
+
+
+    .footer{
+      h2{
+        font-size: medium;
+    }
+      p{
+      font-size: small;
+    
+    }}}
+}
+
