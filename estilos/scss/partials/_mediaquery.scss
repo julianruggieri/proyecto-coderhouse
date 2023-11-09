@@ -1,4 +1,4 @@
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .cuerpo-tienda{
     margin: .1rem;
     display: flex;
@@ -196,5 +196,21 @@
       font-size: small;
     
     }}}
-}
+
+
+    .cuerpo-socio{
+      .contenido-socios{
+        .tarjetas-socios{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    }
+
+
+
+
+
+  }
 
