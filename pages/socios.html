@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos/estilos.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body class="cuerpo-socio">
     <header class="encabezado">
@@ -63,7 +64,46 @@
 
 
     <main class="contenido-socios">
-        <form class="formulario">
+      <section class="tarjetas-socios" data-aos="fade-right" data-aos-duration="2500">
+
+        <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header" style="color: rgb(205, 163, 227); font-weight: 600;">MENOR - JUBILADO
+                <p style="font-size: large;">$2000</p></div>
+            <div class="card-body">
+              <h4 class="card-title">¿DÓNDE?</h4>
+              <p class="card-text">En la Secretaría del Club, ubicada en el estadio Ciudad de Chuku (ingreso por Lisandro de la Torre). Los días que Chuku juegue como local no se realizan trámites para asociarse.</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header" style="color: rgb(184, 115, 221); font-weight: 600;">DAMA - CADETE
+                <p style="font-size: large;">$2200</p></div>
+            <div class="card-body">
+              <h4 class="card-title">¿CUÁNDO?</h4>
+              <p class="card-text">Lunes a viernes de 15:00 a 21:00 hs.
+                Sábados de 9:00 a 12:00 hs. <br></p>
+                <p>La cede se encuentra cerrada domingos y feriados.</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-3" style="max-width: 18rem;" >
+            <div class="card-header" style="color: rgb(138, 32, 196); font-weight: 600;">ACTIVO 
+            <p style="font-size: large;">$2700</p></div>
+            <div class="card-body">
+              <h4 class="card-title">REQUISITOS</h4>
+              <p class="card-text">Presentar el DNI original. <br>
+                Completar -en el momento- el formulario de inscripción. <br>
+                Abonar $400 en concepto de confección de carnet.</p>
+            </div>
+          </div>
+
+
+
+
+
+
+    </section>
+
+
+        <form class="formulario" data-aos="zoom-in-up" data-aos-duration="1500">
             <div class="inputs">
                 <div>
 
@@ -137,9 +177,14 @@
 
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>

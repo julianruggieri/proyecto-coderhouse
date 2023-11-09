@@ -46,7 +46,7 @@
 
         .contenedor-tarjetas {
             display: flex;
-            align-items: center;
+            align-items: first baseline;
             justify-content: center;
             
 
@@ -176,40 +176,40 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            flex-direction: row;
+            flex-direction: column;
             border-style: inset;
-            border-radius: 2vh;
+            
             background-color: rgba(0, 0, 0, 0.406);
 
             h2 {
                 font-family: 'Comfortaa', cursive;
                 font-family: 'Croissant One', cursive;
-                color: aqua;
+                color: white;
                 padding: 1rem;
 
             }
-
-
-            .card {
+            .carruzel{
                 display: flex;
-                height: fit-content;
-                background-color: #55a8e4;
-                border-radius: 2vh;
-                justify-content: center;
-                align-items: center;
-                margin: 1rem;
+                width: 900px;
+                height: 600px;
+                border: double white;
+              }
+              .carruzel img{
+                width: 0px;
+                flex-grow: 1;
+                object-fit: cover;
+                opacity: .8;
+                transition: .5s ease;
+              }
+              .carruzel img:hover{
+                cursor: crosshair;
+                width: 300px;
+                opacity: 1;
+                filter: contrast(120%);
+              }
 
-                p {
-                    font-family: 'Comfortaa', cursive;
-                }
 
-                #plantel {
-                    max-width: 700px;
-                    max-height: 300px;
-
-                }
-
-            }
+            
 
 
 

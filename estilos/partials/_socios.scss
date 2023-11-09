@@ -42,8 +42,24 @@
 
     .contenido-socios{
         grid-area: contenido-socios;
-        background-color: #d2c8d1;
+        background-color: #492746;
         border-style: double;
+        .tarjetas-socios{
+            display: flex;
+            align-items: first baseline;
+            justify-content: center;
+            gap: 4rem;
+            padding: 2rem;
+        
+        }
+        
+        .presentador{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        
+        }
 
         .formulario{
             margin: 3rem;
